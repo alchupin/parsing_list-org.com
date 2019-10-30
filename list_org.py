@@ -70,7 +70,6 @@ def get_company_info(url):
         ogrn = soup.find_all('div', class_='c2m')[2].find_all('p')[3].text.replace('ОГРН: ', '')
     except:
         ogrn = 'Информация отсутствует'
-
     try:
         table = soup.find('table', class_='tt')
     except:
